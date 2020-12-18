@@ -45,7 +45,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 @Controller
-public class ProductController {
+public class ProdController {
 	@Autowired
 	ReviewValidator reviewValidator;
 	@Autowired
