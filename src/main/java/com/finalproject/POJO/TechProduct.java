@@ -17,7 +17,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Hp
+ * @author deepak_lokwani
  */
 @Entity
 @Table(name="tech_products")

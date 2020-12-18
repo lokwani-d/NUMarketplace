@@ -25,7 +25,7 @@
     	Name <form:input path="name"/><form:errors path="name"></form:errors><br/><br/>
     	Email <form:input path="email" type="email"/><form:errors path="email"></form:errors> <br/> <br/>
     	Password <form:password path="password"/><form:errors path="password"></form:errors> <br/><br/>
-    	Confirm password <form:input path="confirmPassword" /><form:errors path="confirmPassword"></form:errors><br/><br/>
+    	Confirm password <form:password path="confirmPassword" /><form:errors path="confirmPassword"></form:errors><br/><br/>
     	Photo <input type="file" name="photo" accept="image/*"><br/><br/>
     	<c:if test="${requestScope.seller ne null}">
     	Type <form:select path="type">

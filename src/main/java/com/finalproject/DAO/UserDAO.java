@@ -33,7 +33,7 @@ import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
 /**
  *
- * @author Hp
+ * @author deepak_lokwani
  */
 public class UserDAO {
    private static EntityManagerFactory entityManagerFactory= Persistence.createEntityManagerFactory("orm");

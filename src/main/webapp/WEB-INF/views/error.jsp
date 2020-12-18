@@ -1,7 +1,7 @@
 <%-- 
     Document   : error
-    Created on : Mar 26, 2020, 10:24:15 AM
-    Author     : Hp
+    Created on : Dec 11, 2020, 3:41:52 PM
+    Author     : Deepak Lokwani
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -29,7 +29,7 @@
     	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">HUMBLE</a>
+				<a class="navbar-brand" href="#">NU MARKETPLACE</a>
 			</div>
 			<ul class="nav navbar-nav">
 				<li><a href="/edu/index.htm">Home</a></li>

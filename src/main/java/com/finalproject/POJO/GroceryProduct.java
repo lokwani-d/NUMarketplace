@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Hp
+ * @author deepak_lokwani
  */
 @Entity
 @Table(name="grocery_products")

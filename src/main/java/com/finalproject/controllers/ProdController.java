@@ -41,11 +41,23 @@ import com.finalproject.utils.GroceryProductValidator;
 import com.finalproject.utils.ReviewValidator;
 import com.finalproject.utils.TechproductValidator;
 import com.google.gson.Gson;
-//import com.mysql.cj.x.protobuf.MysqlxDatatypes.Array;
+
 import com.google.gson.GsonBuilder;
+
+/**
+ * 
+ * @author Deepak_Lokwani
+ * 
+ * NUID: 001316769
+ * 
+ * Project name: Finalproject
+ * Package name: com.finalproject.controllers
+ *
+ */
 
 @Controller
 public class ProdController {
+	
 	@Autowired
 	ReviewValidator reviewValidator;
 	@Autowired
@@ -67,7 +79,7 @@ public class ProdController {
 		CommonsMultipartFile photo= techProduct.getPhoto();
 		if(photo.getSize()!=0) {
 		String fileName="img"+techProduct.getProduct_id()+Calendar.getInstance().getTimeInMillis()+photo.getContentType();
-		File file= new File("E:/humble/images",fileName);
+		File file= new File("C:/Users/deepa/Desktop/images",fileName);
 		techProduct.setPhotoFile(fileName);
 		try {
 			photo.transferTo(file);
@@ -124,7 +136,7 @@ public class ProdController {
 		CommonsMultipartFile photo= groceryProduct.getPhoto();
 		if(photo.getSize()!=0) {
 		String fileName="img"+groceryProduct.getProduct_id()+Calendar.getInstance().getTimeInMillis()+photo.getContentType();
-		File file= new File("E:/humble/images",fileName);
+		File file= new File("C:/Users/deepa/Desktop/images",fileName);
 		groceryProduct.setPhotoFile(fileName);
 		try {
 			photo.transferTo(file);

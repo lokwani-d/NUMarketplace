@@ -35,6 +35,18 @@ import com.finalproject.utils.SellerValidator;
 import com.finalproject.utils.UserValidator;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+/**
+ * 
+ * @author Deepak_Lokwani
+ * 
+ * NUID: 001316769
+ * 
+ * Project name: Finalproject
+ * Package name: com.finalproject.controllers
+ *
+ */
+
 @Controller
 public class SellerController {
 	
@@ -43,10 +55,13 @@ public class SellerController {
 		// TODO Auto-generated constructor stub
 		
 	}
+	
 	@Autowired
 	SellerValidator sellerValidator;
+	
 	@Autowired
 	SellerLoginValidator sellerLoginValidator;
+	
 	// Get Login
 	@RequestMapping(value = {"/seller/login.htm"}, method = RequestMethod.GET)
 	private String getLogin(ModelMap model,Seller seller,HttpServletRequest request) {
@@ -104,7 +119,7 @@ public class SellerController {
 		CommonsMultipartFile photo= seller.getPhoto();
 		if(photo.getSize()!=0) {
 		String fileName="img"+seller.getId()+Calendar.getInstance().getTimeInMillis()+photo.getContentType();
-		File file= new File("E:/humble/images",fileName);
+		File file= new File("C:/Users/deepa/Desktop/images",fileName);
 		seller.setPhotoFile(fileName);
 		try {
 			photo.transferTo(file);

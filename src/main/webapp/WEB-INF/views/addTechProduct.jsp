@@ -1,3 +1,9 @@
+<%-- 
+    Document   : addTechProduct.jsp
+    Created on : Dec 13, 2020, 6:29:52 PM
+    Author     : Deepak Lokwani
+--%>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
@@ -24,7 +30,7 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">HUMBLE</a>
+				<a class="navbar-brand" href="#">NU MARKETPLACE</a>
 			</div>
 			<ul class="nav navbar-nav">
 				<li><a href="/edu/index.htm">Home</a></li>

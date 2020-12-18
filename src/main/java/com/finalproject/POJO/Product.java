@@ -31,7 +31,7 @@ import com.google.gson.annotations.Expose;
 
 /**
  *
- * @author Hp
+ * @author deepak_lokwani
  */
 @Entity
 @Table(name="products")

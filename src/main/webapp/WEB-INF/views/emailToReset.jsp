@@ -1,7 +1,7 @@
 <%-- 
-    Document   : reset
-    Created on : Mar 27, 2020, 6:42:29 AM
-    Author     : Hp
+    Document   : emailToReset.jsp
+    Created on : Dec 12, 2020, 7:39:52 PM
+    Author     : Deepak Lokwani
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

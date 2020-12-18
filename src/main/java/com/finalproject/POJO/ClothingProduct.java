@@ -20,7 +20,7 @@ import org.hibernate.annotations.LazyCollectionOption;
 
 /**
  *
- * @author Hp
+ * @author deepak_lokwani
  */
 @Entity
 @Table(name="clothing_products")

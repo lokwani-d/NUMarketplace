@@ -9,7 +9,7 @@ import java.util.Random;
 
 /**
  *
- * @author Hp
+ * @author deepak_lokwani
  */
 public class RandomTokenGenerator {
     private static final String upper="ABCDEFGHIJKLMNOPQRSTUVWXYZ";

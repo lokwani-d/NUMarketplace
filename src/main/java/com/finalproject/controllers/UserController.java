@@ -43,42 +43,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @Controller
 public class UserController {
-//	@RequestMapping(value = "/users/*.htm", method=RequestMethod.GET)
-//	public ModelAndView get(HttpServletRequest request, HttpServletResponse response) {
-//		String path = request.getServletPath();
-//        String view = path.split("/")[2].split("\\.")[0];
-//        System.out.println(view);
-//        if (view.equals("logout")) {
-//            return logout(request, response);
-//        }
-//        if(view.equals("setPassword")){
-//            String token=request.getParameter("token");
-//            return resetPassword(token,request,response);
-//        }
-//        if(view.equals("forgot"))
-//            return new ModelAndView("emailToReset");
-//        if(view.equals("profile")){
-//        	return getProfile(request,response);
-//        }
-//		return new ModelAndView(view);
-//	}
-//	@RequestMapping(value = "/users/*.htm",method = RequestMethod.POST)
-//	public ModelAndView post(HttpServletRequest request, HttpServletResponse response) {
-//		 if (request.getParameter("action").equals("signup")) {
-//	            return signUp(request, response);
-//	        } else if (request.getParameter("action").equals("login")) {
-//	            return login(request, response);
-//	        } else if (request.getParameter("action").equals("sendMail")) {
-//	            return sendMail(request, response);
-//	        }
-//	        else if(request.getParameter("action").equals("updatePassword")){
-//	            return updatePassword(request,response);
-//	        }
-//	        else if(request.getParameter("action").equals("updateProfile")) {
-//	        	return updateProfile(request,response);
-//	        }
-//	        return  new ModelAndView("error");
-//	}
+
 
 	@Autowired
 	UserValidator validator;
@@ -146,7 +111,7 @@ public class UserController {
 		CommonsMultipartFile photo= user.getPhoto();
 		if(photo.getSize()!=0) {
 		String fileName="img"+user.getId()+Calendar.getInstance().getTimeInMillis()+photo.getContentType();
-		File file= new File("E:/humble/images",fileName);
+		File file= new File("C:/Users/deepa/Desktop/images",fileName);
 		user.setPhotoFile(fileName);
 		try {
 			photo.transferTo(file);
@@ -434,22 +399,5 @@ public class UserController {
 			return "error";
 		}
 	}
-//
-//	private ModelAndView getProfile(HttpServletRequest request, HttpServletResponse response) {
-//		// TODO Auto-generated method stub
-//		Cookie[] cookies = request.getCookies();
-//		String email = "";
-//		for (Cookie cookie : cookies) {
-//			if (cookie.getName().equals("email")) {
-//				email = cookie.getValue();
-//			}
-//		}
-//		UserDAO userdao = new UserDAO();
-//		User user = userdao.getUserByEmail(email);
-//		if (user == null) {
-//			request.setAttribute("errormessage", "Requested user does not exist");
-//			return new ModelAndView("error");
-//		}
-//		return new ModelAndView("userprofile", "user", user);
-//	}
+
 }

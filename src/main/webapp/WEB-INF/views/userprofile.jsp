@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title><c:out value="${cookie.name.value}"/> | HUMBLE</title>
+<title><c:out value="${cookie.name.value}"/> | NU MARKETPLACE</title>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
 	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">HUMBLE</a>
+				<a class="navbar-brand" href="#">NU MARKETPLACE</a>
 			</div>
 			<ul class="nav navbar-nav">
 				<li><a href="/edu/index.htm">Home</a></li>

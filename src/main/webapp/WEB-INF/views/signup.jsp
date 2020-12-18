@@ -1,7 +1,7 @@
 <%-- 
     Document   : signup
-    Created on : Mar 25, 2020, 6:04:49 PM
-    Author     : Hp
+    Created on : Dec 12, 2020, 4:12:52 PM
+    Author     : Deepak Lokwani
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -27,8 +27,8 @@
     	Name <form:input path="name"/><form:errors path="name"></form:errors><br/><br/>
     	Email <form:input path="email" type="email"/><form:errors path="email"></form:errors> <br/> <br/>
     	Password <form:password path="password"/><form:errors path="password"></form:errors> <br/><br/>
-    	Confirm password <form:input path="confirmPassword" /><form:errors path="confirmPassword"></form:errors><br/><br/>
-    	Photo <input type="file" name="photo" accept="image/*"><br/><br/>
+    	Confirm password <form:password path="confirmPassword" /><form:errors path="confirmPassword"></form:errors><br/><br/>
+    	<%-- --%>Photo <input type="file" name="photo" accept="image/*"><br/><br/>
     	<c:if test="${requestScope.seller ne null}">
     	Type <form:select path="type">
     		<form:option value="Clothing"></form:option>

@@ -16,7 +16,7 @@ import javax.mail.internet.MimeMessage;
 
 /**
  *
- * @author Hp
+ * @author deepak_lokwani
  */
 public class Mail {
 
@@ -27,7 +27,7 @@ public class Mail {
 
     public Mail(String to) {
         this.to = to;
-        this.from = "admin@esd.com";
+        this.from = "deepaklokwani@rocketmail.com";
         this.userName ="apikey";
         this.password = "XXXXXXX";
     }
@@ -66,6 +66,7 @@ public class Mail {
 
     public void sendMail(String subject, String token) {
         Properties props = new Properties();
+        props.put("mail.transport.protocol", "smtp");
         props.put("mail.smtp.host", "smtp.sendgrid.net");
         props.put("mail.smtp.socketFactory.port", "465");
         props.put("mail.smtp.socketFactory.class",
