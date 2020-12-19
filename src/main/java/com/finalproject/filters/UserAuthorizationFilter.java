@@ -80,9 +80,7 @@ public class UserAuthorizationFilter implements Filter {
 				rd.forward(request, res);
 				return;
 			}
-//			else {
-//				chain.doFilter(request, res);
-//			}
+
 		}
 		chain.doFilter(request, res);
 	}
@@ -104,9 +102,7 @@ public class UserAuthorizationFilter implements Filter {
 				rd.forward(request, res);
 				return;
 			}
-//			else {
-//				chain.doFilter(request, res);
-//			}
+
 		}
 		chain.doFilter(request, res);
 	}

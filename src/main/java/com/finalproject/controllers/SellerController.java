@@ -214,13 +214,11 @@ public class SellerController {
 			return "Login before continuing";
 		}
 		Seller seller= sellerdao.getSellerByEmail((String)request.getSession().getAttribute("user"));
-//		if(seller==null) {
-//			request.setAttribute("errormessage", "Seller does not exist");
-//			RequestDispatcher rd= request.getRequestDispatcher();
-//		}
+
 		Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
 		return gson.toJson(seller.getProducts());
 	}
+	
 	@RequestMapping(value="/seller/getOrders.htm",method=RequestMethod.GET)
 	public String getOrders(HttpServletRequest request,SellerDAO sellerdao) {
 		if(request.getSession().getAttribute("user")==null) {
@@ -235,11 +233,8 @@ public class SellerController {
 		request.setAttribute("orders", seller.getOrders());
 		return "showOrders";
 	}
-//	@RequestMapping(value="/seller/logout.htm",method=RequestMethod.GET)
-//	public String handleLogout(HttpServletRequest request,HttpServletResponse response) {
-//		deleteCookie(request, response);
-//		return "redirect:" + "http://localhost:8080/edu/index.htm";
-//	}
+
+	
 //	Create cookie
 	public void createCookie(int time, String name, String msg, String path, HttpServletResponse response) {
 		Cookie c = new Cookie(name, msg);

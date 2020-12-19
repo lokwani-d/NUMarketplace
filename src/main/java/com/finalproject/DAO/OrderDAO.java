@@ -6,6 +6,16 @@ import javax.persistence.Persistence;
 
 import com.finalproject.POJO.Order;
 
+/**
+ * 
+ * @author Deepak_Lokwani
+ * 
+ * NUID: 001316769
+ * 
+ * Project name: Finalproject
+ * Package name: com.finalproject.DAO
+ *
+ */
 public class OrderDAO {
 
 	public OrderDAO() {

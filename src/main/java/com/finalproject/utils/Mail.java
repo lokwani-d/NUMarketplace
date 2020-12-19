@@ -15,8 +15,14 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 /**
+ * 
+ * @author Deepak_Lokwani
+ * 
+ * NUID: 001316769
+ * 
+ * Project name: Finalproject
+ * Package name: com.finalproject.utils
  *
- * @author deepak_lokwani
  */
 public class Mail {
 

@@ -5,7 +5,16 @@ import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
 import com.finalproject.POJO.Review;
-
+/**
+ * 
+ * @author Deepak_Lokwani
+ * 
+ * NUID: 001316769
+ * 
+ * Project name: Finalproject
+ * Package name: com.finalproject.utils
+ *
+ */
 public class ReviewValidator implements Validator {
 
 	public ReviewValidator() {
@@ -29,12 +38,10 @@ public class ReviewValidator implements Validator {
 	public String filter(String value) {
 		value = value.replaceAll("eval\\((.*)\\)", "");
         value = value.replaceAll("[\\\"\\\'][\\s]*javascript:(.*)[\\\"\\\']", "\"\"");
-//        value = value.replaceAll("(?i)<script.*?>.*?<script.*?>", "");
-//        value = value.replaceAll("(?i)<script.*?>.*?</script.*?>", "");
         value = value.replaceAll("(?i)<.*?javascript:.*?>.*?</.*?>", "");
         value = value.replaceAll("(?i)<.*?\\s+on.*?>.*?</.*?>", "");
         value = value.replaceAll("(?i)<script>", "");
-	value = value.replaceAll("(?i)</script>", "");
+        value = value.replaceAll("(?i)</script>", "");
         value=  value.replaceAll("(?i)\\bor\\b","");
         value= value.replaceAll("(?i)\\bdelete\\b","");
         value=  value.replaceAll("(?i)\\band\\b","");

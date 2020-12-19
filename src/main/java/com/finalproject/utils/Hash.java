@@ -2,6 +2,16 @@ package com.finalproject.utils;
 
 import org.mindrot.jbcrypt.BCrypt;
 
+/**
+ * 
+ * @author Deepak_Lokwani
+ * 
+ * NUID: 001316769
+ * 
+ * Project name: Finalproject
+ * Package name: com.finalproject.utils
+ *
+ */
 public class Hash {
 
 	public Hash() {

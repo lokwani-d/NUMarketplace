@@ -26,7 +26,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body>
+<body >
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -37,15 +37,18 @@
 			</ul>
 		</div>
 	</nav>
+	<div style="border: none;
+				    padding: 10px 100px;
+				    font-size: 16px;">
 	<h3>Add Product</h3>
 	<form:form modelAttribute="techProduct" enctype="multipart/form-data">
-		Name <form:input path="name" required="required"/> <form:errors path="name"></form:errors><br/>
-		Description <form:input path="description" required="required" /> <form:errors name="description"></form:errors><br/>
-		Photo <input type="file" name="photo" accept="image/*" /> 
+		Name <form:input path="name" required="required"/> <form:errors path="name"></form:errors><br/> <br/>
+		Description <form:input path="description" required="required" /> <form:errors name="description"></form:errors><br/><br/>
+		Photo <input type="file" name="photo" accept="image/*" /> <br/>
 		Price  <input type='number'
-			name="price" id="price" min="0"  step="0.1"  required="required" /> <form:errors name="price"></form:errors>
+			name="price" id="price" min="0"  step="0.1"  required="required" /> <form:errors name="price"></form:errors><br/><br/>
 		Quantity  <input type='number'
-			name="quantity" id="quantity" min="1"  step="1" required="required" /> <form:errors name="quantity"></form:errors>
+			name="quantity" id="quantity" min="1"  step="1" required="required" /> <form:errors name="quantity"></form:errors><br/>
 		 	<table>
 				<tr><th>Specification</th>
 				<th>Value</th>
@@ -69,7 +72,12 @@
 				<td><input type="text" name="spec.value" required"/></td>
 				</tr>
 			</table>
-			<input type="submit" value="Add product"/>
+			<input style="border: gray 1px solid;
+				    padding: 12px;
+				    font-size: 16px;
+				    opacity:0.95;"
+				    type="submit" value="Add product"/>
 	</form:form>
+	</div>
 </body>
 </html>

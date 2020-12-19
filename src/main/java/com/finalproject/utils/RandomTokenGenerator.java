@@ -8,8 +8,14 @@ package com.finalproject.utils;
 import java.util.Random;
 
 /**
+ * 
+ * @author Deepak_Lokwani
+ * 
+ * NUID: 001316769
+ * 
+ * Project name: Finalproject
+ * Package name: com.finalproject.utils
  *
- * @author deepak_lokwani
  */
 public class RandomTokenGenerator {
     private static final String upper="ABCDEFGHIJKLMNOPQRSTUVWXYZ";

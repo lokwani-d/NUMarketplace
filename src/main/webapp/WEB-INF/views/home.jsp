@@ -75,7 +75,11 @@
 				    font-size: 16px;
 				    opacity:0.6;"
 				     type="text" id="search" name="search" placeholder="Search items"/>
-        <input type="submit" value="Search"/> 
+        <input style="border: none;
+				    padding: 12px;
+				    font-size: 16px;
+				    opacity:0.6;"
+				     type="submit" value="Search"/> 
         </form>
     </body>
 </html>

@@ -5,7 +5,17 @@ import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
 import com.finalproject.POJO.TechProduct;
-
+/**
+ * 
+ * @author Deepak_Lokwani
+ * 
+ * NUID: 001316769
+ * 
+ * Project name: Finalproject
+ * Package name: com.finalproject.utils
+ * Created on: 18-Dec-2020
+ *
+ */
 public class TechproductValidator implements Validator {
 
 	public TechproductValidator() {

@@ -7,6 +7,16 @@ import org.springframework.validation.Validator;
 import com.finalproject.POJO.Person;
 import com.finalproject.POJO.User;
 
+/**
+ * 
+ * @author Deepak_Lokwani
+ * 
+ * NUID: 001316769
+ * 
+ * Project name: Finalproject
+ * Package name: com.finalproject.utils
+ *
+ */
 public class UserValidator implements Validator{
 
 	public UserValidator() {

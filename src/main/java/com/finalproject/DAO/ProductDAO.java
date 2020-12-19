@@ -23,6 +23,17 @@ import javax.persistence.criteria.Order;
 import javax.persistence.criteria.ParameterExpression;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
+
+/**
+ * 
+ * @author Deepak_Lokwani
+ * 
+ * NUID: 001316769
+ * 
+ * Project name: Finalproject
+ * Package name: com.finalproject.DAO
+ *
+ */
 public class ProductDAO {
 	 private static EntityManagerFactory entityManagerFactory= Persistence.createEntityManagerFactory("orm");
 	   private EntityManager entityManager= null;
